@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkout</title>
+    <style>
+      #navbar{
+        width: 100%;
+        height: 50px;
+        background-color: purple;
+        color: white;
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: space-evenly;
+        padding-bottom: 2%;
+        margin-bottom: 20px;
+      }
+      #user-detail>form>input{
+        width: 96%;
+        height: 30px;
+        margin-top: 15px;
+      }
+      #user-detail>form{
+        width: 300px;
+        margin: auto;
+        border: 1px solid;
+        border-radius: 10px;
+        padding: 2%;
+      }
+      #confirm{
+        width: 50%;
+        width: 20%;
+        height: 40px;
+        background-color: purple;
+        color: white;
+        cursor: pointer;
+        border: none;
+        border-radius: 20px;
+      }
+      #movie{
+        width: 300px;
+        margin: auto;
+        margin-top: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="navbar">
+      <h1>Checkout | Cost: 100/seat</h1>
+      <!-- Display the wallet amount here inside h1 tag with id as "wallet". Note only amount, no extra text. Like 500 not Rs 500 -->
+      <h1 id="wallet"></h1>
+    </div>
+    <div id="user-detail">
+      <!-- input field to accept user name with id as "user_name"  -->
+      <!-- input field to accept number of seats with id as "number_of_seats"  -->
+      <!-- A submit button to confirm booking with id as "confirm"  -->
+      <form>
+        <label>Name</label>
+        <input type="text" id="user_name" required>
+        <label>Number Of Seat</label>
+        <input type="number" id="number_of_seats" required>
+        <input type="submit" id="confirm" value="Confirm Booking">
+      </form>
+    </div>
+
+    <div id="movie">
+      <!-- Append the selected movie for booking here -->
+      <!-- movie should have title and image  -->
+      <!-- It should be the same movie you selected for booking  -->
+    </div>
+  </body>
+</html>
+
+<script src="checkout.js"></script>
